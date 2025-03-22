@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Unidades - mm a Pulgadas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Unidades</h1>
+        <div class="converter-box">
+            <div class="direction-toggle">
+                <button id="toggle-direction" onclick="toggleDirection()">mm → Pulgadas</button>
+            </div>
+            <div class="input-section" id="mm-section">
+                <label for="mm-input">Milímetros (mm):</label>
+                <input type="number" id="mm-input" placeholder="Ingresa milímetros" step="any" oninput="convertFromMM()">
+            </div>
+            <div class="input-section" id="inches-section">
+                <label>Pulgadas (formato: número + fracción):</label>
+                <div class="inches-inputs">
+                    <input type="number" id="inches-whole" placeholder="0" oninput="convertFromInches()" min="0">
+                    <span class="fraction-symbol">+</span>
+                    <input type="number" id="inches-numerator" placeholder="0" oninput="convertFromInches()" min="0">
+                    <span class="fraction-symbol">/</span>
+                    <input type="number" id="inches-denominator" placeholder="1" oninput="convertFromInches()" min="1">
+                    <span class="unit-symbol">"</span>
+                </div>
+            </div>
+            <div class="result-section">
+                <p id="result">Resultado: <span id="result-value">0</span></p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Con mucho amor hecho por César Santana 💙</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
