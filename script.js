@@ -8,7 +8,7 @@ function toggleDirection() {
     const inchesSection = document.getElementById("inches-section");
 
     if (isMMtoInches) {
-        button.textContent = "mm → Pulgadas";
+        button.textContent = "mm → pulgadas";
         mmSection.style.display = "block";
         inchesSection.style.display = "none";
         convertFromMM();
