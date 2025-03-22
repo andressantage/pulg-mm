@@ -13,7 +13,7 @@ function toggleDirection() {
         inchesSection.style.display = "none";
         convertFromMM();
     } else {
-        button.textContent = "Pulgadas → mm";
+        button.textContent = "pulgadas → mm";
         mmSection.style.display = "none";
         inchesSection.style.display = "block";
         convertFromInches();
